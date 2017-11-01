@@ -1,0 +1,3 @@
+accessing
+fileModes
+	^ fileModes

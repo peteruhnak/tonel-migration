@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TonelMigrationBaseTest",
+	"category" : "Tonel-Migration-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"writer",
+		"stream"
+	],
+	"name" : "TonelGitFastImportWriterTest",
+	"type" : "normal"
+}

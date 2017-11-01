@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "PeterUhnak 10/30/2017 08:33",
+	"super" : "Object",
+	"category" : "Tonel-Migration-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"info",
+		"author",
+		"committer",
+		"parents"
+	],
+	"name" : "TonelMigrationCommitInfo",
+	"type" : "normal"
+}

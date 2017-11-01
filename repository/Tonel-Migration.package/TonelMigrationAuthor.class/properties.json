@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "PeterUhnak 10/30/2017 08:48",
+	"super" : "Object",
+	"category" : "Tonel-Migration-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"email"
+	],
+	"name" : "TonelMigrationAuthor",
+	"type" : "normal"
+}

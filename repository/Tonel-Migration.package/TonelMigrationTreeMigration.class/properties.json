@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "PeterUhnak 10/30/2017 08:26",
+	"super" : "Object",
+	"category" : "Tonel-Migration-FastImport",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"repository",
+		"fileModes"
+	],
+	"name" : "TonelMigrationTreeMigration",
+	"type" : "normal"
+}

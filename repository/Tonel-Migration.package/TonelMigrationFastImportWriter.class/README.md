@@ -1,0 +1,1 @@
+I take a MemoryStore, list of permissions, and a commit info and produce and write out git fast-import commands.

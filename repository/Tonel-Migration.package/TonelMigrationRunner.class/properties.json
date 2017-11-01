@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "PeterUhnak 11/1/2017 20:23",
+	"super" : "Object",
+	"category" : "Tonel-Migration-FastImport",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sourceRepository",
+		"writer",
+		"targetFile"
+	],
+	"name" : "TonelMigrationRunner",
+	"type" : "normal"
+}

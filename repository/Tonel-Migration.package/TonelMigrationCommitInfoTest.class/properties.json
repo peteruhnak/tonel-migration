@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TonelMigrationBaseTest",
+	"category" : "Tonel-Migration-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TonelMigrationCommitInfoTest",
+	"type" : "normal"
+}

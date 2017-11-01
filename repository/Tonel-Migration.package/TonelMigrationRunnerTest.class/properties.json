@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TonelMigrationBaseTest",
+	"category" : "Tonel-Migration-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"migration",
+		"runner",
+		"stream",
+		"targetFile"
+	],
+	"name" : "TonelMigrationRunnerTest",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+I represent a git commit author (email + name).
