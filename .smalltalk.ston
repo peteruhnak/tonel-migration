@@ -1,0 +1,15 @@
+SmalltalkCISpec {
+	#loading : [
+		SCIMetacelloLoadSpec {
+			#baseline : 'TonelMigration',
+			#directory : 'repository',
+			#platforms : [ #pharo ]
+		}
+	],
+	#testing : {
+		#packages : [ 'Tonel-Migration' ],
+		#coverage : {
+			#packages : [ 'Tonel-Migration' ]
+		}
+	}
+}
