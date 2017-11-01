@@ -1,4 +1,5 @@
 testing
-isPackageEntry: aPath
-	^ aPath parent = ('/' asFileReference / repository subdirectory)
-		and: [ IceLibgitFiletreeWriter isValidPackageName: aPath basename ]
+isPackageEntry: aFile
+	^ aFile parent basename = repository subdirectory
+		and: [ aFile parent parent isRoot
+				and: [ IceLibgitFiletreeWriter isValidPackageName: aFile basename ] ]

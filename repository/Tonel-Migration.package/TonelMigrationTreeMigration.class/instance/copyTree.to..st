@@ -1,4 +1,3 @@
 loading
-copyTree: aGitTree to: aStore
-	aGitTree entries
-		do: [ :entry | self copyTreeEntry: entry to: aStore directory: '' asFileReference ]
+copyTree: aGitTree to: aDirectory
+	aGitTree entries do: [ :entry | self copyTreeEntry: entry to: aDirectory ]
