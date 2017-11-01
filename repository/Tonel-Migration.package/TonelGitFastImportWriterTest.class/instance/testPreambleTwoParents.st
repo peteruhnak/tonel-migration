@@ -19,5 +19,5 @@ committer Peter Uhnak <i.uhnak@gmail.com> {1}
 data 51
 Merge with 1d1e3c4511e052ecb5fb102ba11c0c1f41423445
 from :1
-from :3
+merge :3
 ' format: {dtNow})
