@@ -21,22 +21,24 @@ Metacello new
 
 ```smalltalk
 "in Pharo"
+sourceRepository := IceRepository registry detect: [ :each | each name = 'tonel-migration-demo' ];
+
 targetLocation := FileLocator home asFileReference / 'prog' / 'tonel-migration' / 'migration-target'.
 
 "if the location doesn't exist"
 targetLocation ensureCreateDirectory.
-repo := IceLibgitLocalRepository newRepositoryAt: targetLocation  subdirectory: ''.
+repo := IceLibgitLocalRepository newRepositoryAt: targetLocation subdirectory: sourceRepository subdirectory.
 repo init.
 
 TonelMigrationRunner new
-	sourceRepository: (IceRepository registry detect: [ :each | each name = 'tonel-migration-demo' ]);
+	sourceRepository: sourceRepository;
 	targetFile: targetLocation / 'import.txt';
 	migrate
 ```
 
 ```bash
 # in terminal
-cd ~/.../migration-target
+cd ~/prog/tonel-migration/migration-target
 # import.txt is the file that you've created earlier
 git fast-import < import.txt
 # fast-import doesn't change the working directory, so we need to update it
