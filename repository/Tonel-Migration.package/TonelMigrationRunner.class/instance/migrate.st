@@ -3,6 +3,5 @@ migrate
 	targetFile
 		ensureDelete;
 		writeStreamDo: [ :stream | 
-			stream lineEndConvention: #lf.
-			writer on: stream.
+			writer on: (ZnNewLineWriterStream on: stream) forLf.
 			self commitSequence do: [ :each | writer writeVersion: each ] ]
