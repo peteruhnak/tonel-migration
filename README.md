@@ -10,12 +10,24 @@ Pharo utility to migrate FileTree repositories to Tonel
 
 ## Installation
 
+**Pharo 6**
+
+```smalltalk
+Metacello new
+	baseline: 'TonelMigration';
+	repository: 'github://peteruhnak/tonel-migration:pharo6/repository';
+	load.
+```
+
+**Pharo 7**
+
 ```smalltalk
 Metacello new
 	baseline: 'TonelMigration';
 	repository: 'github://peteruhnak/tonel-migration/repository';
 	load.
 ```
+
 
 ## Usage
 
