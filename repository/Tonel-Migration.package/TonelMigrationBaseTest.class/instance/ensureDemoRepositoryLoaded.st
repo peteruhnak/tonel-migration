@@ -5,6 +5,5 @@ ensureDemoRepositoryLoaded
 		ifNone: [ repository := IceRepositoryCreator new
 				url: 'https://github.com/peteruhnak/tonel-migration-demo';
 				subdirectory: 'repository';
-				branchName: 'master';
 				createRepository.
 			repository register ]
