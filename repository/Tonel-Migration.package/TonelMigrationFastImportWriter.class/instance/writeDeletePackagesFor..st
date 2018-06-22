@@ -3,4 +3,4 @@ writeDeletePackagesFor: aCommitInfo
 	aCommitInfo packageNames
 		do: [ :each | 
 			fastWriter
-				writeDeleteReference: '/' asFileReference / aCommitInfo repository subdirectory / each ]
+				writeDeleteReference: FileSystem unicodeMemory root / aCommitInfo repository subdirectory / each ]

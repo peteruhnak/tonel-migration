@@ -1,9 +1,9 @@
 tests
 testPreambleTwoParents
 	| commit contents dtNow |
-	commit := commits detect: [ :each | each parents size = 2 ].
-	writer writeCommitPreambleFor: commit parents first asTonelCommitInfo.
-	writer writeCommitPreambleFor: commit parents second asTonelCommitInfo.
+	commit := commits detect: [ :each | each ancestors size = 2 ].
+	writer writeCommitPreambleFor: commit ancestors first asTonelCommitInfo.
+	writer writeCommitPreambleFor: commit ancestors second asTonelCommitInfo.
 	stream reset.
 	writer writeCommitPreambleFor: commit asTonelCommitInfo.
 	contents := stream contents.
