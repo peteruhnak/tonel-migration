@@ -1,7 +1,11 @@
 # tonel-migration
 [![Build Status](https://travis-ci.org/peteruhnak/tonel-migration.svg?branch=master)](https://travis-ci.org/peteruhnak/tonel-migration) [![Coverage Status](https://coveralls.io/repos/github/peteruhnak/tonel-migration/badge.svg?branch=master)](https://coveralls.io/github/peteruhnak/tonel-migration?branch=master)
 
-Pharo utility to migrate FileTree repositories to Tonel
+Pharo utility to migrate FileTree repositories to Tonel.
+
+This utility performs a deep history rewrite -- it walks through the entire history graph and recommits every commit with tonel; non-source files are not affected, nor are ancestry relationships changed. That way one can blame and diff changes against the pass.
+If you want to modify only your `HEAD`, use Iceberg's tonel plugin.
+
 
 ## Prerequisites
 
