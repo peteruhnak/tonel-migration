@@ -3,6 +3,7 @@ writeVersion: aVersion
 	| memoryStore commitInfo |
 	commitInfo := self commitInfoFor: aVersion.
 	fastWriter writeCommitPreambleFor: commitInfo.
+	fastWriter writeMergesFor: commitInfo.
 	memoryStore := self newMemoryStore.
 	fileModes := Dictionary new.
 	self writeDeletePackagesFor: aVersion.
