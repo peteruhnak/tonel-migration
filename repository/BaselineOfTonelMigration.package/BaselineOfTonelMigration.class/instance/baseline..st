@@ -5,6 +5,6 @@ baseline: spec
 		for: #common
 		do: [ spec
 				baseline: 'GitFastWriter'
-				with: [ spec repository: 'github://peteruhnak/git-fast-writer/repository' ].
+				with: [ spec repository: 'github://peteruhnak/git-fast-writer:pharo6/repository' ].
 			spec package: 'Tonel-Migration' with: [ spec requires: 'GitFastWriter' ].
 			spec group: 'default' with: #('Tonel-Migration') ]
