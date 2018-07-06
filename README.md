@@ -10,7 +10,18 @@ Note that this does _not_ affect [git-migration](https://github.com/peteruhnak/g
 
 ---
 
+# ALTERNATIVES
+
+If you are on Pharo 6.1, you can use the following script to migrate the sources for a single commit.
+
+https://github.com/pharo-vcs/tonel/blob/b6ae50816a00b3d73664ffb4c9c49b1ce9720312/MigrateFromFileTree.md
+
+For Pharo 7.0, Iceberg includes a plugin to do the same.
+
 ---
+
+
+
 
 ## Old README
 
