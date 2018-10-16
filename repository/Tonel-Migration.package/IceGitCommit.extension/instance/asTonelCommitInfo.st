@@ -5,5 +5,9 @@ asTonelCommitInfo
 
 	^ TonelMigrationCommitInfo
 		info: self
-		author: (TonelMigrationAuthor name: commit author name email: commit author email)
-		committer: (TonelMigrationAuthor name: commit committer name email: commit committer email)
+		author: (TonelMigrationAuthor
+			name: commit author name asByteArray utf8Decoded
+			email: commit author email asByteArray utf8Decoded)
+		committer: (TonelMigrationAuthor
+			name: commit committer name asByteArray utf8Decoded
+			email: commit committer email asByteArray utf8Decoded)

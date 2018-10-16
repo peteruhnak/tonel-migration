@@ -6,5 +6,7 @@ copyPackagesIn: aVersion toStore: memoryStore
 	aVersion packageNames
 		collect: [ :name | IcePackage named: name repository: aVersion repository ]
 		thenDo: [ :each | TonelWriter fileOut: (aVersion versionFor: each) on: codeDirectory ].
-	props := IceRepositoryProperties fromDictionary: {(#format -> #tonel)} asDictionary.
+	props := IceRepositoryProperties
+		fromDictionary: {(#format -> #tonel)} asDictionary
+		commitish: aVersion.
 	props storeIn: codeDirectory
