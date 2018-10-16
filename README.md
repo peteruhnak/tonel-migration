@@ -59,7 +59,7 @@ Metacello new
 ```
 
 
-## Usage (Pharo 6)
+## Usage (Pharo 7)
 
 ```smalltalk
 "in Pharo"
@@ -67,15 +67,16 @@ sourceRepository := IceRepository registry detect: [ :each | each name = 'my-pro
 
 targetLocation := sourceRepository location parent / sourceRepository location basename, 'tonel'.
 
-"if the location doesn't exist"
-targetLocation ensureCreateDirectory.
-repo := IceLibgitLocalRepository newRepositoryAt: targetLocation subdirectory: sourceRepository subdirectory.
+repo := IceRepositoryCreator new
+	location: targetLocation;
+	subdirectory: sourceRepository subdirectory;
+	createNewRepositoryNamed: targetLocation basename.
 repo init.
 
 TonelMigrationRunner new
 	sourceRepository: sourceRepository;
 	targetFile: targetLocation / 'import.txt';
-	migrate
+	migrate.
 ```
 
 ```bash
